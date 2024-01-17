@@ -1,0 +1,50 @@
+:root {
+  --main-green: #648463;
+  --light-blue: #1a73e8;
+  --dark-blue: #37639e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  background: var(--main-green);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar>ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar>ul>li{
+    color: white;
+    list-style-type: none;
+    font-size: 15px;
+    padding: 5px 20px;
+}
+
+.navbar-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    width: 200px;
+}   
+
+.navbar-button{
+    border: 2px solid white;
+    margin: 0px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
