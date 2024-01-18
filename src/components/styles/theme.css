@@ -179,7 +179,7 @@ body {
   width: 300px;
 }
 
-.heading {
+.login-heading {
   font-weight: bold;
   margin: 10px 0px;
   font-size: 24px;
@@ -190,7 +190,7 @@ body {
   text-decoration: underline;
 }
 
-.input-fields {
+.login-input-fields {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
@@ -228,13 +228,13 @@ body {
   background-color: var(--main-green);
 }
 
-.button-text {
+.login-button-text {
   font-size: 15px;
   font-weight: bold;
   color: white;
 }
 
-.legal-conditions {
+.login-legal-conditions {
   margin-top: 10px;
   font-size: 12px;
   line-height: 20px;
