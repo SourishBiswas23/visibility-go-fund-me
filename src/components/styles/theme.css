@@ -161,14 +161,14 @@ body {
   border: 1px solid #dbd9db;
 }
 
-.login-page,
+.page,
 .sign-up-page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.login-content {
+.content {
   margin: auto;
   flex: 1;
   display: flex;
@@ -179,7 +179,7 @@ body {
   width: 300px;
 }
 
-.login-heading {
+.heading {
   font-weight: bold;
   margin: 10px 0px;
   font-size: 24px;
@@ -190,13 +190,13 @@ body {
   text-decoration: underline;
 }
 
-.login-input-fields {
+.input-fields {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
 }
 
-.login-input-top {
+.input-top {
   border-radius: 5px 5px 0px 0px;
   border: 1px solid var(--main-green);
   background: #fff;
@@ -204,7 +204,7 @@ body {
   border-bottom: none;
 }
 
-.login-input-bottom {
+.input-bottom {
   border-radius: 0px 0px 5px 5px;
   border: 1px solid var(--main-green);
   background: #fff;
@@ -222,19 +222,19 @@ body {
   color: var(--main-green);
 }
 
-.login-button {
+.button {
   padding: 15px 125px;
   border-radius: 5px;
   background-color: var(--main-green);
 }
 
-.login-button-text {
+.button-text {
   font-size: 15px;
   font-weight: bold;
   color: white;
 }
 
-.login-legal-conditions {
+.legal-conditions {
   margin-top: 10px;
   font-size: 12px;
   line-height: 20px;
