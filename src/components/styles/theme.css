@@ -203,7 +203,13 @@ body {
   padding: 10px;
   border-bottom: none;
 }
-
+.input-middle{
+  border-radius: 0px;
+  border: 1px solid var(--main-green);
+  background: #fff;
+  padding: 10px;
+  border-bottom: none;
+}
 .input-bottom {
   border-radius: 0px 0px 5px 5px;
   border: 1px solid var(--main-green);
@@ -223,9 +229,12 @@ body {
 }
 
 .button {
-  padding: 15px 125px;
+  padding: 15px 0px;
   border-radius: 5px;
   background-color: var(--main-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button-text {
