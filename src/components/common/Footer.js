@@ -12,7 +12,7 @@ function Footer() {
     <div className="footer">
       <div className="all-footers">
         {Object.entries(footerContent).map(([heading, subHeadings]) => (
-          <div className="footer-section">
+          <div>
             <div className="footer-heading">{heading}</div>
             <ul>
               {subHeadings.map((subHeading) => (
