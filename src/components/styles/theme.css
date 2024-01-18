@@ -51,39 +51,81 @@ body {
 }
 
 .footer {
-  background: var(--grey);
+  background: var(--main-green);
   display: flex;
   justify-content: center;
   bottom: 0;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 .footer-heading {
-  font-weight: bold;
-  color: #737273;
-  font-size: 13px;
+  color: #6CCA69;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 35px;
 }
 
-.all-footers {
+.footer-label-and-link {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 35px;
   min-width: 1000px;
   justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-logo {
+  color: #fff;
+  font-family: Inter;
+  font-size: 55.795px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer-logo-and-links {
+  display: flex;
+
+}
+
+.footer-company-logos{
+  color: white;
+  padding: 20px 0px;
+}
+
+.footer-company-single-logo{
+  padding:0px 20px;
 }
 
 .footer-sub-heading {
   list-style-type: none;
-  margin-top: 5px;
-  font-size: 16px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
-.divider {
-  border-bottom: 1px solid #dbd9db;
-  width: 1000px;
+.footer-images{
+  display: flex;
+}
 
-  margin: 10px auto 10px auto;
+.single-image{
+  margin-right: 8px;
 }
 
 .trademarks {
@@ -95,22 +137,32 @@ body {
   margin-right: auto;
 }
 
-.copyrights{
-  color: #737273;
-  font-size: 12px;
+.copyrights {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
   margin: 10px 0px;
-  
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.language-button{
+.copyright-label {
+  padding: 5px 16.89px 5px 9px;
+}
+
+.language-button {
   padding: 10px 15px;
   height: 40px;
   border-radius: 5px;
-  background: #EFEFEF;
+  background: #efefef;
   border: 1px solid #dbd9db;
 }
 
-.login-page {
+.login-page,
+.sign-up-page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -127,7 +179,7 @@ body {
   width: 300px;
 }
 
-.login-heading {
+.heading {
   font-weight: bold;
   margin: 10px 0px;
   font-size: 24px;
@@ -138,7 +190,7 @@ body {
   text-decoration: underline;
 }
 
-.login-input-fields {
+.input-fields {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
@@ -176,13 +228,13 @@ body {
   background-color: var(--main-green);
 }
 
-.login-button-text {
+.button-text {
   font-size: 15px;
   font-weight: bold;
   color: white;
 }
 
-.login-legal-conditions {
+.legal-conditions {
   margin-top: 10px;
   font-size: 12px;
   line-height: 20px;

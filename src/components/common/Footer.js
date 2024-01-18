@@ -1,41 +1,102 @@
+import {
+  faInstagram,
+  faMedium,
+  faMediumM,
+  faXTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { faCircle } from "@fortawesome/free-regular-svg-icons";
+import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 function Footer() {
   const footerContent = {
-    COMPANY: ["About", "Impact", "Careers", "Team"],
-    COMMUNITY: ["Blog", "Press", "Community Guidelines"],
-    SUPPORT: ["Help", "Guides", "Privacy", "Policies", "Cookies"],
-    CONNECT: ["Twitter", "Facebook", "Instagram"],
+    "Fundraise for": [
+      "Medical",
+      "Emergency",
+      "Memorial",
+      "Education",
+      "Nonprofit",
+      "Crisis Relief",
+    ],
+    "Learn more": [
+      "How GoFundMe Works",
+      "Why GoFundMe",
+      "Common questions",
+      "Success stories",
+      "Supported countries",
+      "Charity fundraising",
+      "Pricing",
+    ],
+    Resources: [
+      "Help center",
+      "Blog",
+      "GoFundMe Stories",
+      "Newsroom",
+      "Careers",
+      "About",
+      "More resources",
+    ],
   };
+
+  const footerLegalLabelAndLink = {
+    Terms: "#",
+    "Privacy Notice": "#",
+    Legal: "#",
+    "Accessibility Statement": "#",
+  };
+
+  const imagePaths = ["/images/app-store.png", "/images/play-store.png"];
+
+  const footerCompanyLogos = [
+    faCircle,
+    faYoutube,
+    faXTwitter,
+    faInstagram,
+    faMedium,
+    faMicrophone,
+  ];
 
   return (
     <div className="footer">
-      <div className="all-footers">
-        {Object.entries(footerContent).map(([heading, subHeadings]) => (
-          <div>
-            <div className="footer-heading">{heading}</div>
-            <ul>
-              {subHeadings.map((subHeading) => (
-                <li className="footer-sub-heading">{subHeading}</li>
-              ))}
-            </ul>
+      <div className="footer-logo-and-links">
+        <div className="footer-logos">
+          <div className="footer-logo">LOGO</div>
+          <div className="footer-company-logos">
+            {footerCompanyLogos.map((logo) => (
+              <FontAwesomeIcon
+                icon={logo}
+                className="footer-company-single-logo"
+              ></FontAwesomeIcon>
+            ))}
           </div>
-        ))}
-      </div>
-      <div className="divider"></div>
-      <div className="trademarks">
-        <div className="copyrights">
-          <div>© 2024, Change.org, PBC</div>
-          <div>
-            This site is protected by reCAPTCHA and the Google{" "}
-            <span className="privacy-policy"> Privacy Policy</span>
-            and <span className="terms-of-service">Terms of Service</span>{" "}
-            apply.
+          <div className="footer-images">
+            {imagePaths.map((imagePath) => (
+              <img src={imagePath} className="single-image"></img>
+            ))}
           </div>
         </div>
-        <button type="button" className="language-button">
-          English (United States)
-        </button>
+        <div className="footer-label-and-link">
+          {Object.entries(footerContent).map(([heading, subHeadings]) => (
+            <div>
+              <div className="footer-heading">{heading}</div>
+              <ul>
+                {subHeadings.map((subHeading) => (
+                  <li className="footer-sub-heading">{subHeading}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="copyrights">
+        <div>
+          © 2010-2024{" "}
+          {Object.entries(footerLegalLabelAndLink).map(([label, link]) => (
+            <span className="copyright-label">{label}</span>
+          ))}
+        </div>
       </div>
     </div>
   );
